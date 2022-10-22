@@ -11,7 +11,7 @@ namespace PetShop_API.Models
         public DbSet<FishFeedModel> FishProducts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=Test_EF_DB;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Data Source=SQL8001.site4now.net,1433;Initial Catalog=db_a8dfe9_aspdb;User Id=db_a8dfe9_aspdb_admin;Password=Bozic901;");
         }
     }
 }
